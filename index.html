@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b721d85ed7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Restaurante</title>
+</head>
+<body>
+    
+
+    <div class="alert container position-sticky top-50px alert-success enviado" role="alert">
+        Perfecto! su reserva fue agendada
+    </div>
+
+
+
+    <!--  NAV DESKTOP  -->
+
+    <nav class="nav-desktop">
+        <ul>
+            <li>
+                <h1>
+                    <a href="index.html" class="imagen-logo"><img src="images/logo.png" alt="logo"></a>
+                </h1>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#comidas">Comidas</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#postres">Postres</a></li>
+            <li><a href="#reserva">Hace tu pedido</a></li>
+        </ul>
+    </nav>
+
+
+    <!--  NAV MOBILE  -->
+
+
+
+    <div class="btn">
+        <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+        <h1 class="text">Title</h1>
+        <ul>
+            
+            <!--  section 1  -->
+
+            <li>
+                <a href="#home">Home
+                    <span class="first"></span>
+                </a>
+            </li>
+
+            <!--  section 2  -->
+
+            <li>
+                <a href="#comidas">Comidas
+                    <span class="second"></span>
+                </a>
+            </li>
+
+            <!--  section 3  -->
+
+            <li>
+                <a href="#bebidas">Bebidas
+                    <span class="third"></span>
+                </a>
+            </li>
+
+            <!--  section 4  -->
+
+            <li>
+                <a href="#postres">Postres
+                    <span class="fourth"></span>
+                </a>
+            </li>
+
+            <!--  section 5  -->
+
+            <li>
+                <a href="#reserva">Hace tu pedido
+                    <span class="fifth"></span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+    <div id="home">
+        
+        <!--   CARRUSEL   -->
+
+        <div id="carouselExampleCaptions" class="carousel slide carrusel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/hamburguesa.jpg" class="d-block w-100" alt="hamburguesa">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-mayus">Hamburguesa Completa</h5>
+                        <p class="text-mayus">huevo frito, tomate, cebolla, pepino, lechuga</p>
+                    </div>
+                </div>
+            <div class="carousel-item">
+                <img src="images/pizza.jpg" class="d-block w-100" alt="pizza">
+                <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-mayus">Pizza a la Piedra</h5>
+                        <p class="text-mayus">muzzarella, tomate, fetas de salamín, albaca</p>
+                    </div>
+                </div>
+            <div class="carousel-item">
+                <img src="images/tacos.jpg" class="d-block w-100" alt="tacos">
+                <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-mayus">Tacos</h5>
+                        <p class="text-mayus">pechuga, albaca, cebolla, lima</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+            <!--   PRECIOS   -->
+
+        <div class="flex">
+            <div class="precios">
+                <p>$500<span>Hamburguesa</span></p>
+            </div>
+    
+            <div class="precios">
+                <p>$350<span>Pizza</span></p>
+            </div>
+    
+            <div class="precios">
+                <p>$150<span>Tacos</span></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+            <!--   SECCION DE COMIDAS   -->
+
+
+
+    <div id="comidas">
+
+        <h2>Nuestras Comidas</h2>
+
+        <div class="principal-card">
+            <img src="images/mas-pedido.jpg" alt="combo hamburguesa">
+            <div class="info-card-principal">
+                <h3>Lo más pedido</h3>
+                <h4>Combo hamburguesa completa con papas fritas + bebida</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat voluptatem rem exercitationem 
+                    laboriosam itaque! Esse ab, temporibus, repellendus earum nulla iusto d
+                    eleniti vitae quia, sequi repudiandae numquam? Quasi, saepe veritatis.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat voluptatem rem exercitationem 
+                    laboriosam itaque! Esse ab, temporibus, repellendus earum nulla iusto d
+                    eleniti vitae quia, sequi repudiandae numquam? Quasi, saepe veritatis.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="comidas">
+
+            <div class="carta">
+                <img src="images/mas-pedido.jpg" alt="hamburguesa">
+                <h3>comida 1</h3>
+            </div>
+            <div class="carta">
+                <img src="images/mas-pedido.jpg" alt="hamburguesa">
+                <h3>comida 2</h3>
+            </div>
+            <div class="carta">
+                <img src="images/mas-pedido.jpg" alt="hamburguesa">
+                <h3>comida 3</h3>
+            </div>
+            <div class="carta">
+                <img src="images/mas-pedido.jpg" alt="hamburguesa">
+                <h3>comida 4</h3>
+            </div>
+            <div class="carta">
+                <img src="images/mas-pedido.jpg" alt="hamburguesa">
+                <h3>comida 5</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--   SECCION DE COMIDAS   -->
+
+
+    <div id="bebidas">
+
+        <h2>Nuestras Bebidas</h2>
+
+        <div class="bebidas">
+            <div class="carta">
+                <img src="images/bebidas.jpg" alt="hamburguesa">
+                <h3>bebida 1</h3>
+            </div>
+            <div class="carta">
+                <img src="images/bebidas.jpg" alt="hamburguesa">
+                <h3>bebida 2</h3>
+            </div>
+            <div class="carta">
+                <img src="images/bebidas.jpg" alt="hamburguesa">
+                <h3>bebida 3</h3>
+            </div>
+            <div class="carta">
+                <img src="images/bebidas.jpg" alt="hamburguesa">
+                <h3>bebida 4</h3>
+            </div>
+            <div class="carta">
+                <img src="images/bebidas.jpg" alt="hamburguesa">
+                <h3>bebida 5</h3>
+            </div>
+            <div class="carta">
+                <img src="images/bebidas.jpg" alt="hamburguesa">
+                <h3>bebida 6</h3>
+            </div>
+            <div class="carta">
+                <img src="images/bebidas.jpg" alt="hamburguesa">
+                <h3>bebida 7</h3>
+            </div>
+            <div class="carta">
+                <img src="images/bebidas.jpg" alt="hamburguesa">
+                <h3>bebida 8</h3>
+            </div>
+            <div class="carta">
+                <img src="images/bebidas.jpg" alt="hamburguesa">
+                <h3>bebida 9</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--   SECCION DE POSTRES   -->
+
+
+    <div id="postres">
+
+        <h2 class="title-postre">Nuestros Postres</h2>
+
+        <div class="postres">
+            <div class="carta">
+                <img src="images/postre.jpg" alt="hamburguesa">
+                <h3>postre 1</h3>
+            </div>
+            <div class="carta">
+                <img src="images/postre.jpg" alt="hamburguesa">
+                <h3>postre 2</h3>
+            </div>
+            <div class="carta">
+                <img src="images/postre.jpg" alt="hamburguesa">
+                <h3>postre 3</h3>
+            </div>
+            <div class="carta">
+                <img src="images/postre.jpg" alt="hamburguesa">
+                <h3>postre 4</h3>
+            </div>
+            <div class="carta">
+                <img src="images/postre.jpg" alt="hamburguesa">
+                <h3>postre 5</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--   SECCION HACE TU RESERVA   -->
+
+
+    <h2>Hace tu reserva</h2>
+
+    <div class="reserva" id="reserva">
+
+        <div class="horarios">
+            <h3>Horarios de apertura</h3>
+            <p>Lunes..............................12:00 - 16:00  -  20:00 - 00</p>
+            <p>Martes............................12:00 - 16:00  -  20:00 - 00</p>
+            <p>Miercoles......................12:00 - 16:00  -  20:00 - 00</p>
+            <p>Jueves............................12:00 - 16:00  -  20:00 - 00</p>
+            <p>Viernes..........................12:00 - 16:00  -  20:00 - 00</p>
+            <p>Sábado...................13:00 - 16:00  -  20:00 - 23:00</p>
+            <p>Domingo........................................................Cerrado</p>
+        </div>
+
+        <form action="" class="was-validated" id="user-form">
+
+            <div class="form-check">
+                <label for="fecha">Selecciona el día de tu reserva</label>
+                <input type="date" required>
+                <div class="valid-feedback">
+                    Correcto!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor, seleccione el día de la reserva
+                </div>
+            </div>
+
+            <div class="form-check">
+                <label for="fecha">Selecciona el horario de tu reserva</label>
+                <input type="time" required>
+                <div class="valid-feedback">
+                    Correcto!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor, seleccione el horario de la reserva
+                </div>
+            </div>
+
+            <div class="form-check">
+                <label for="nombre">Completa con tu nombre y apellido</label>
+                <input type="text" required>
+                <div class="valid-feedback">
+                    Correcto!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor, complete con su nombre y apellido
+                </div>
+            </div>
+
+            <div class="form-check">
+                <label for="cantidad">¿cuantas personas serán?</label>
+                <input type="number" required>
+                <div class="valid-feedback">
+                    Correcto!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor, complete con la cantidad de personas
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" id="button-submit">RESERVAR</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <!--  FOOTER  -->
+
+    <footer>
+
+        <div class="texto-footer">
+            <p>Página sin fines de lucro ni comerciales</p>
+            <p>© Copyright Bautista Castets</p>
+        </div>
+
+        <hr class="hr-footer">
+
+        <div class="empresa">
+            <h5>Comunidad</h5>
+            <ul>
+                <li><a href="#">Contacto de Desarrollador</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Publicidad</a></li>
+                <li><a href="#">Inversionistas</a></li>
+                <li><a href="#">Proveedores</a></li>
+            </ul>
+        </div>
+
+        <hr class="hr-footer">
+
+        <div class="empresa">
+            <h5>Compañía</h5>
+            <ul>
+                <li><a href="index.html">Pantalla de Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Empleo</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <hr class="hr-footer">
+
+        <div class="redes">
+            <ul class="lista-redes">
+                <li><a target="blank" href="https://www.instagram.com/?hl=es-la"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                <li><a target="blank" href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                <li><a target="blank" href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                <li><a target="blank" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+    <script src="scripts/app.js"></script>
+    <script src="https://kit.fontawesome.com/b721d85ed7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
