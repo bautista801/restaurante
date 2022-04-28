@@ -1,1215 +1,774 @@
+@charset "UTF-8";
+/* ------------- MEDIDA DESKTOP ------------- */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Fjalla+One & family= Kanit:ital,wght@0,300;1,300 & family= Oswald & display=swap");
 @media (min-width: 1024px) {
-
-    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&display=swap');
-    @import url('https://fonts.googleapis.com/css2? family= Fjalla+One & family= Kanit:ital,wght@0,300;1,300 & family= Oswald & display=swap');
-
-    /* ------------- RESETEO ------------- */
-    * {
-        margin: 0;
-        padding: 0;
-        scroll-behavior: smooth;
-    }
-
-    body {
-        background-image: url("https://irp-cdn.multiscreensite.com/44ae9721/MOBILE/images/d845fe2c-1143-4cda-8f42-cba6adf927e4.jpg");
-        max-width: 90%;
-        margin: auto;
-        
-    }
-
-    /* ------------- ESTILOS DEL MENU ------------- */
-
-    nav {
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
-
+  /* ------------- RESETEO ------------- */
+  * {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; }
+  body {
+    background-image: url("https://irp-cdn.multiscreensite.com/44ae9721/MOBILE/images/d845fe2c-1143-4cda-8f42-cba6adf927e4.jpg");
+    max-width: 90%;
+    margin: auto; }
+  /* ---------------- NAV MOBILE ----------------*/
+  .btn, .sidebar {
+    display: none; }
+  /* ------------- ESTILOS DEL MENU ------------- */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 10; }
     nav ul {
-        padding: 0;
-        background: #ffc600;
-        margin-top: 70px;
-        display: flex;
-        justify-content: space-evenly;
-        text-decoration: none;
-        list-style: none;
-        height: 50px;
-        border: 2px solid rgb(0, 0, 0);
-    }
-
-    nav ul li {
-        margin: auto;
-    }
-
-    nav ul li a {
-        display: block;
-        text-decoration: none;
-        padding: 10px;
-        text-align: center;
-        color: black;
-        text-transform: uppercase;
-        font-size: 20px;
-        font-family: 'Kanit', sans-serif;
-    }
-
-    .imagen-logo {
-        padding: 0;
-    }
-
-    h1 a img {
-        width: 45px;
-        height: 45px;
-    }
-
-    /* ------------- MODIFICACIONES DEL CARRUSEL ------------- */
-
-    .carrusel {
-        width: 70%;
-        height: 70%;
-        margin-top: 40px;
-    }
-
-    .text-mayus {
-        padding: 5px;
-        border-radius: 3px;
-        background-color: #ffc600;
-        color: black;
-        text-transform: uppercase;
-        display: flex;
-        flex-direction: column;
-        width: max-content;
-        margin: 10px auto;
-    }
-
-    /* ------------- BLOQUE CARRUSEL Y PRECIOS ------------- */
-
-    #home {
-        display: flex;
-    }
-
-    .flex {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30%;
-    }
-
-    .precios {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        color: rgb(0, 0, 0);
-        background-color: #ffc600;
-        margin-left: 30px;
-        height: 30%;
-        border-radius: 5px;
-    }
-
-    .precios p {
+      padding: 0;
+      background: #ffc600;
+      margin-top: 70px;
+      display: flex;
+      justify-content: space-evenly;
+      text-decoration: none;
+      list-style: none;
+      height: 50px;
+      border: 2px solid black; }
+      nav ul li {
+        margin: auto; }
+        nav ul li a {
+          display: block;
+          text-decoration: none;
+          padding: 10px;
+          text-align: center;
+          color: black;
+          text-transform: uppercase;
+          font-size: 20px;
+          font-family: 'Kanit', sans-serif; }
+        nav ul li h1 .imagen-logo {
+          padding: 0; }
+          nav ul li h1 .imagen-logo img {
+            padding: 0;
+            width: 45px;
+            height: 45px; }
+  /* ------------- MODIFICACIONES DEL CARRUSEL ------------- */
+  .carrusel {
+    width: 70%;
+    height: 70%;
+    margin-top: 40px; }
+  .text-mayus {
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #ffc600;
+    color: black;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin: 10px auto; }
+  /* ------------- BLOQUE CARRUSEL Y PRECIOS ------------- */
+  #home {
+    display: flex; }
+  .flex {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%; }
+    .flex .precios {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: black;
+      background-color: #ffc600;
+      margin-left: 30px;
+      height: 30%;
+      border-radius: 5px; }
+      .flex .precios p {
         margin: auto auto;
         font-size: 50px;
-        font-weight: 300;
-    }
-
-    .precios span {
-        margin-bottom: 10px;
-        display: block;
-        font-size: x-large;
-        font-weight: bold;
-    }
-
-    /* ------------- SECCION DE COMIDAS ------------- */
-
-    h2{
-        margin-top: 100px;
-        padding: 5px;
-        border-radius: 3px;
-        background-color: #ffc600;
-        text-align: center;
-        font-family: 'Fjalla One', sans-serif;
-    }
-
-    .title-postre {
-        background-color: rgb(245, 148, 216);
-    }
-
-    /* ------------- ESTILOS CARD PRINCIPAL ------------- */
-
-    .principal-card {
-        margin-top: 80px;
-        background-color: aliceblue;
-        width: 100%;
-        height: 500px;
-        display: flex;
-        border-radius: 3px;
-    }
-
-    .info-card-principal {
-        max-width: 90%;
-    }
-
-    .principal-card > img {
-        width: 500px;
-        height: 500px;
-    }
-
-    .info-card-principal > h3 {
+        font-weight: 300; }
+        .flex .precios p span {
+          margin-bottom: 10px;
+          display: block;
+          font-size: x-large;
+          font-weight: bold; }
+  /* ------------- SUBTITULOS H2 DE TODAS LAS SECCIONES ------------- */
+  h2 {
+    margin-top: 100px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #ffc600;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif; }
+  .title-postre {
+    background-color: #f594d8; }
+  /* ------------- ESTILOS CARD PRINCIPAL DE COMIDAS ------------- */
+  .principal-card {
+    margin-top: 80px;
+    background-color: aliceblue;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    border-radius: 3px; }
+    .principal-card img {
+      width: 500px;
+      height: 500px; }
+    .principal-card .info-card-principal {
+      max-width: 90%; }
+      .principal-card .info-card-principal h3 {
         margin-top: 40px;
         text-align: center;
-        text-transform: uppercase;
-    }
-
-    .info-card-principal > h4 {
+        text-transform: uppercase; }
+      .principal-card .info-card-principal h4 {
         margin-top: 30px;
         text-align: center;
-        text-transform: uppercase;
-    }
-
-    .info-card-principal > p {
+        text-transform: uppercase; }
+      .principal-card .info-card-principal p {
         margin: 30px auto 0 auto;
         text-align: center;
-        width: 90%;
-    }
-
-    /* ------------- ESTILOS DE CARTAS ------------- */
-
-    .comidas, .bebidas, .postres {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap; 
-        margin-top: 20px;
-    }
-
-    .carta {
-        margin-top: 50px;
-        cursor: pointer;
+        width: 90%; }
+  /* ------------- ESTILOS DE CARTAS ------------- */
+  .comidas, .bebidas, .postres {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px; }
+    .comidas .carta, .bebidas .carta, .postres .carta {
+      margin-top: 50px;
+      cursor: pointer;
+      width: 300px;
+      height: 400px;
+      background-color: #ffc600;
+      border-radius: 4px; }
+      .comidas .carta img, .bebidas .carta img, .postres .carta img {
         width: 300px;
-        height: 400px;
-        background-color: #ffc600;
-        border-radius: 4px;
-    }
-
-    .carta > img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .carta > h3 {
+        height: 300px; }
+      .comidas .carta h3, .bebidas .carta h3, .postres .carta h3 {
         text-align: center;
         margin: 30px 0;
         text-transform: uppercase;
-        font-family: 'Fjalla One', sans-serif;
-    }
-
-    .bebidas > .carta {
-        background-color: orange;
-    }
-
-    .postres > .carta {
-        background-color: rgb(245, 148, 216);
-    }
-
-
-    /* ------------- ESTILOS DE SECCION RESERVA ------------- */
-
-
-    .reserva {
-        background-color: aliceblue;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .reserva > .horarios {
-        margin: auto;
-    }
-
-    .reserva > .horarios > h3 {
+        font-family: 'Fjalla One', sans-serif; }
+  .bebidas > .carta {
+    background-color: orange; }
+  .postres > .carta {
+    background-color: #f594d8; }
+  /* ------------- ESTILOS DE SECCION RESERVA ------------- */
+  .reserva {
+    background-color: aliceblue;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap; }
+    .reserva .horarios {
+      margin: auto; }
+      .reserva .horarios h3 {
         text-align: center;
-        margin-bottom: 50px;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        height: 400px;
-    }
-
+        margin-bottom: 50px; }
+  /* ------------- ESTILOS DEL FORMULARIO ------------- */
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 400px; }
     form .form-check {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-
-    form > div > label {
+      display: flex;
+      flex-direction: column;
+      margin: auto; }
+      form .form-check label {
         width: max-content;
-        margin: auto;
-    }
-
-    form > div > input {
+        margin: auto; }
+      form .form-check input {
         width: 300px;
         margin: auto;
-        border-radius: 5px;
-    }
-
-    form > div > button {
-        margin: auto 0 20px 38%;
-        background-color: rgb(89, 189, 69);
-        color: black;
-        width: 100px;
-        height: 50px;
-        border: 1px solid rgb(0, 0, 0);
-        border-radius: 20px;
-    }
-
-    form > div > button:hover {
-        background-color: rgb(49, 209, 49);
-    }
-
-
-    /* ------------- ESTILOS DEL FOOTER ------------- */
-
-
-    footer {
-        height: max-content;
-        background-color: black;
-        color: aliceblue;
-        /* margin-top: 80px; */
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-    }
-
-    .texto-footer {
-        font-size: x-small;
-        margin: auto 0 auto 150px;
-    }
-
-    footer > div {
-        margin: auto 0;
-    }
-
-    /*  ESTILO DE REDES FOOTER  */
-
-    .redes {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: 0 150px 20px 0;
-    }
-
-    .lista-redes {
-        text-align: left;
-        width: max-content;
-    }
-
-    .lista-redes > li > a {
-        font-size: large;
-        list-style-type: none;
-        text-decoration: none;
-        color: rgb(241, 241, 227);
-    }
-
-    i {
-        font-size: x-large;
-        margin-right: 10px;
-        background-color: rgb(36, 36, 36);
-        padding: 10px;
-        border-radius: 50%;
-    }
-
-    .lista-redes > li > a:hover {
-        color: rgb(76, 175, 214);
-    }
-
-    /*  ESTILO DE EMPRESA Y COMPAÑIA / FOOTER  */
-
-    footer > div > ul {
-        color: rgb(241, 241, 227);
+        border-radius: 5px; }
+    form button {
+      margin: auto 0 20px 38%;
+      background-color: #59bd45;
+      color: black;
+      width: 100px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 20px; }
+    form button:hover {
+      background-color: #31d131; }
+  /* ------------- ESTILOS DEL FOOTER ------------- */
+  footer {
+    height: max-content;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    /*  ESTILO DE REDES FOOTER  */ }
+    footer .texto-footer {
+      font-size: x-small;
+      margin: auto 0 auto 150px; }
+    footer div {
+      margin: auto 0;
+      /*  ESTILO DE EMPRESA Y COMPAÑIA / FOOTER  */ }
+      footer div h5 {
+        text-align: center;
+        margin-top: 20px; }
+      footer div ul {
+        color: #f1f1e3;
         padding: 10px;
         margin-top: 20px;
         font-size: small;
-        text-align: center;
-    }
+        text-align: center; }
+        footer div ul li {
+          margin-top: 20px;
+          list-style-type: none; }
+          footer div ul li a {
+            text-decoration: none;
+            color: #f1f1e3; }
+          footer div ul li a:hover {
+            color: #4cafd6; }
+    footer .hr-footer {
+      margin: auto;
+      transform: rotate(90deg);
+      width: 10%; }
+    footer .redes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 0 150px 20px 0; }
+      footer .redes .lista-redes {
+        text-align: left;
+        width: max-content; }
+        footer .redes .lista-redes li > a {
+          font-size: large;
+          list-style-type: none;
+          text-decoration: none;
+          color: #f1f1e3; }
+          footer .redes .lista-redes li > a i {
+            font-size: x-large;
+            margin-right: 10px;
+            background-color: #242424;
+            padding: 10px;
+            border-radius: 50%; }
+        footer .redes .lista-redes li > a:hover {
+          color: #4cafd6; } }
 
-    footer > div > ul > li {
-        margin-top: 20px;
-        list-style-type: none;
-        text-decoration: none;
-    }
-
-    .empresa > ul > li > a {
-        list-style-type: none;
-        text-decoration: none;
-        color: rgb(241, 241, 227);
-    }
-
-    footer > div > h5 {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    footer > .empresa > ul > li > a:hover {
-        color: rgb(76, 175, 214);
-    }
-
-    .hr-footer {
-        margin: auto;
-        transform: rotate(90deg);
-        width: 10%;
-    }
-
-
-    /* ---------------- nav mobile ----------------*/
-
-    .btn, .sidebar {
-        display: none;
-    }
-
-}
-
-
-
-
-
-/* <<<<<<<<<<<------------------ estilos mobile/tablet -------------->>>>>>>>>>>>>>> */
-
-
-
-
-
+/* <<<<<<<<<<<------------------ ESTILOS MOBILE/TABLET -------------->>>>>>>>>>>>>>> */
 @media (min-width: 756px) and (max-width: 1023px) {
-
-
-    /* ------------- RESETEO ------------- */
-    * {
-        margin: 0;
-        padding: 0;
-        scroll-behavior: smooth;
-    }
-
-    body {
-        background-image: url("https://irp-cdn.multiscreensite.com/44ae9721/MOBILE/images/d845fe2c-1143-4cda-8f42-cba6adf927e4.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 90%;
-        margin: auto;
-        
-    }
-
-    /* ------------- ESTILOS DEL MENU ------------- */
-
-    .nav-desktop{
-        display: none;
-    }
-
-    /* ------------- MODIFICACIONES DEL CARRUSEL ------------- */
-
-    .carrusel {
-        width: 100%;
-        height: 100%;
-        margin-top: 100px;
-    }
-
-    /* ------------- BLOQUE CARRUSEL Y PRECIOS ------------- */
-
-    /* #home {
-        display: flex;
-        flex-wrap: wrap;
-    } */
-
-    .flex {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .precios {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        color: rgb(0, 0, 0);
-        background-color: #ffc600;
-        width: 30%;
-        height: 30%;
-        border-radius: 5px;
-    }
-
-    .precios p {
+  /* ------------- RESETEO ------------- */
+  * {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; }
+  body {
+    background-image: url("https://irp-cdn.multiscreensite.com/44ae9721/MOBILE/images/d845fe2c-1143-4cda-8f42-cba6adf927e4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 90%;
+    margin: auto; }
+  /* ------------- ESTILOS DEL MENU DESKTOP ------------- */
+  .nav-desktop {
+    display: none; }
+  /* ---------------- NAV MOBILE ----------------*/
+  .btn {
+    position: fixed;
+    z-index: 10;
+    top: 15px;
+    left: 45px;
+    height: 55px;
+    width: 50px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #1b1b1b;
+    transition: left 0.4s ease; }
+    .btn span {
+      color: #fff;
+      font-size: 28px;
+      line-height: 45px; }
+  .btn.click {
+    left: 260px; }
+  .btn.click span:before {
+    content: '\f00d'; }
+  .sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: #050505;
+    transition: left 0.4s ease;
+    z-index: 10;
+    top: 0; }
+    .sidebar .text {
+      color: antiquewhite;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 65px;
+      text-align: center;
+      background: #1e1e1e;
+      letter-spacing: 1px; }
+    .sidebar ul {
+      background: #1b1b1b;
+      height: 100%;
+      width: 100%;
+      list-style: none;
+      padding-left: 0; }
+      .sidebar ul li {
+        line-height: 60px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        .sidebar ul li a {
+          position: relative;
+          color: #fff;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 500;
+          display: block;
+          width: 100%;
+          border-left: 3px solid cyan;
+          padding-left: 20px; }
+          .sidebar ul li a span {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 22px;
+            transition: transform 0.4s; }
+      .sidebar ul li:last-child {
+        border-radius: 1px solid rgba(255, 255, 255, 0.05); }
+  .sidebar.show {
+    left: 0px; }
+  /* ------------- MODIFICACIONES DEL CARRUSEL ------------- */
+  .carrusel {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px; }
+  /* ------------- BLOQUE CARRUSEL Y PRECIOS ------------- */
+  .flex {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
+    .flex .precios {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: black;
+      background-color: #ffc600;
+      width: 30%;
+      height: 30%;
+      border-radius: 5px; }
+      .flex .precios p {
         margin: auto auto;
         font-size: 50px;
-        font-weight: 300;
-    }
-
-    .precios span {
-        margin-bottom: 10px;
-        display: block;
-        font-size: x-large;
-        font-weight: bold;
-    }
-
-    /* ------------- SECCION DE COMIDAS ------------- */
-
-    h2{
-        margin-top: 100px;
-        padding: 5px;
-        border-radius: 3px;
-        background-color: #ffc600;
-        text-align: center;
-        font-family: 'Fjalla One', sans-serif;
-    }
-
-    .title-postre {
-        background-color: rgb(245, 148, 216);
-    }
-
-    /* ------------- ESTILOS CARD PRINCIPAL ------------- */
-
-    .principal-card {
-        display: flex;
-        flex-direction: column;
-        margin: 80px auto 0 auto;
-        background-color: aliceblue;
-        width: 90%;
-        height: max-content;
-        display: flex;
-        border-radius: 3px;
-    }
-
-    .info-card-principal {
-        max-width: 90%;
-        margin: auto;
-    }
-
-    .principal-card > img {
-        width: auto;
-        height: auto;
-    }
-
-    .info-card-principal > h3 {
+        font-weight: 300; }
+        .flex .precios p span {
+          margin-bottom: 10px;
+          display: block;
+          font-size: x-large;
+          font-weight: bold; }
+  /* ------------- SUBTITULOS DE TODAS LAS SECCIONES ------------- */
+  h2 {
+    margin-top: 100px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #ffc600;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif; }
+  .title-postre {
+    background-color: #f594d8; }
+  /* ------------- ESTILOS CARD PRINCIPAL ------------- */
+  .principal-card {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto 0 auto;
+    background-color: aliceblue;
+    width: 90%;
+    height: max-content;
+    border-radius: 3px; }
+    .principal-card img {
+      width: auto;
+      height: auto; }
+    .principal-card .info-card-principal {
+      max-width: 90%;
+      margin: auto; }
+      .principal-card .info-card-principal h3 {
         margin-top: 40px;
         text-align: center;
-        text-transform: uppercase;
-    }
-
-    .info-card-principal > h4 {
+        text-transform: uppercase; }
+      .principal-card .info-card-principal h4 {
         margin-top: 30px;
         text-align: center;
-        text-transform: uppercase;
-    }
-
-    .info-card-principal > p {
+        text-transform: uppercase; }
+      .principal-card .info-card-principal p {
         margin: auto auto 20px;
         text-align: center;
-        width: 90%;
-    }
-
-    /* ------------- ESTILOS DE CARTAS ------------- */
-
-    .comidas, .bebidas, .postres {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap; 
-        margin-top: 20px;
-    }
-
-    .carta {
-        margin-top: 50px;
-        cursor: pointer;
+        width: 90%; }
+  /* ------------- ESTILOS DE CARTAS ------------- */
+  .comidas, .bebidas, .postres {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px; }
+    .comidas .carta, .bebidas .carta, .postres .carta {
+      margin-top: 50px;
+      cursor: pointer;
+      width: 300px;
+      height: 400px;
+      background-color: #ffc600;
+      border-radius: 4px; }
+      .comidas .carta img, .bebidas .carta img, .postres .carta img {
         width: 300px;
-        height: 400px;
-        background-color: #ffc600;
-        border-radius: 4px;
-    }
-
-    .carta > img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .carta > h3 {
+        height: 300px; }
+      .comidas .carta h3, .bebidas .carta h3, .postres .carta h3 {
         text-align: center;
         margin: 30px 0;
         text-transform: uppercase;
-        font-family: 'Fjalla One', sans-serif;
-    }
-
-    .bebidas > .carta {
-        background-color: orange;
-    }
-
-    .postres > .carta {
-        background-color: rgb(245, 148, 216);
-    }
-
-
-    /* ------------- ESTILOS DE SECCION RESERVA ------------- */
-
-
-    .reserva {
-        background-color: aliceblue;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .reserva > .horarios {
-        margin: auto;
-    }
-
-    .reserva > .horarios > h3 {
+        font-family: 'Fjalla One', sans-serif; }
+  .bebidas > .carta {
+    background-color: orange; }
+  .postres > .carta {
+    background-color: #f594d8; }
+  /* ------------- ESTILOS DE SECCION RESERVA ------------- */
+  .reserva {
+    background-color: aliceblue;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap; }
+    .reserva .horarios {
+      margin: auto; }
+      .reserva .horarios h3 {
         text-align: center;
-        margin-bottom: 50px;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        height: 400px;
-    }
-
-    form > .form-check {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-
-    }
-
-    form > div > label {
+        margin-bottom: 50px; }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 400px; }
+    form .form-check {
+      display: flex;
+      flex-direction: column;
+      margin: auto; }
+      form .form-check label {
         width: max-content;
-        margin: auto;
-    }
-
-    form > div > input {
+        margin: auto; }
+      form .form-check input {
         width: 300px;
-        margin: auto;
-    }
-
-    form > div > button {
-        margin: auto 0 20px 38%;
-        background-color: rgb(89, 189, 69);
-        color: black;
-        width: 100px;
-        height: 50px;
-        border: 1px solid rgb(0, 0, 0);
-        border-radius: 20px;
-    }
-
-    form > button:hover {
-        background-color: rgb(49, 209, 49);
-    }
-
-
-    /* ------------- ESTILOS DEL FOOTER ------------- */
-
-
-    footer {
-        height: max-content;
-        background-color: black;
-        color: aliceblue;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
-
-    .texto-footer {
-        font-size: x-small;
-        margin: 50px auto;
-    }
-
-    footer > div {
-        margin: auto 0;
-    }
-
-    /*  ESTILO DE REDES FOOTER  */
-
-    .redes {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: auto;
-    }
-
-    .lista-redes {
-        text-align: left;
-        width: max-content;
-    }
-
-    .lista-redes > li > a {
-        font-size: large;
-        list-style-type: none;
-        text-decoration: none;
-        color: rgb(241, 241, 227);
-    }
-
-    i {
-        font-size: x-large;
-        margin-right: 10px;
-        background-color: rgb(36, 36, 36);
-        padding: 10px;
-        border-radius: 50%;
-    }
-
-    .lista-redes > li > a:hover {
-        color: rgb(76, 175, 214);
-    }
-
-    /*  ESTILO DE EMPRESA Y COMPAÑIA / FOOTER  */
-
-    footer > div > ul {
-        color: rgb(241, 241, 227);
+        margin: auto; }
+    form div button {
+      margin: auto 0 20px 38%;
+      background-color: #59bd45;
+      color: black;
+      width: 100px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 20px; }
+  /* ------------- ESTILOS DEL FOOTER ------------- */
+  footer {
+    height: max-content;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    /*  ESTILO DE REDES FOOTER  */ }
+    footer .texto-footer {
+      font-size: x-small;
+      margin: 50px auto; }
+    footer div {
+      margin: auto 0;
+      /*  ESTILO DE EMPRESA Y COMPAÑIA / FOOTER  */ }
+      footer div h5 {
+        text-align: center;
+        margin-top: 20px; }
+      footer div ul {
+        color: #f1f1e3;
         padding: 10px;
         margin-top: 20px;
         font-size: small;
-        text-align: center;
-    }
+        text-align: center; }
+        footer div ul li {
+          margin-top: 20px;
+          list-style-type: none; }
+          footer div ul li a {
+            text-decoration: none;
+            color: #f1f1e3; }
+    footer .hr-footer {
+      margin: auto;
+      width: 50%; }
+    footer .redes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: auto; }
+      footer .redes .lista-redes {
+        text-align: left;
+        width: max-content; }
+        footer .redes .lista-redes li > a {
+          font-size: large;
+          list-style-type: none;
+          text-decoration: none;
+          color: #f1f1e3; }
+          footer .redes .lista-redes li > a i {
+            font-size: x-large;
+            margin-right: 10px;
+            background-color: #242424;
+            padding: 10px;
+            border-radius: 50%; } }
 
-    footer > div > ul > li {
-        margin-top: 20px;
-        list-style-type: none;
-        text-decoration: none;
-    }
-
-    .empresa > ul > li > a {
-        list-style-type: none;
-        text-decoration: none;
-        color: rgb(241, 241, 227);
-    }
-
-    footer > div > h5 {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    footer > .empresa > ul > li > a:hover {
-        color: rgb(76, 175, 214);
-    }
-
-    .hr-footer {
-        margin: auto;
-        width: 50%;
-    }
-
-
-    /* ---------------- nav mobile ----------------*/
-
-    .sidebar {
-        position: fixed;
-        width: 250px;
-        height: 100%;
-        left: -250px;
-        background: #050505;
-        transition: left 0.4s ease;
-        z-index: 10;
-        top: 0;
-    }
-
-    .sidebar.show {
-        left: 0px;
-    }
-
-    .btn {
-        position: fixed;
-        z-index: 10;
-        top: 15px;
-        left: 45px;
-        height: 55px;
-        width: 50px;
-        text-align: center;
-        border-radius: 3px;
-        cursor: pointer;
-        background: #1b1b1b;
-        transition: left 0.4s ease;
-    }
-
-    .btn.click {
-        left: 260px;
-    }
-
-    .btn span {
-        color: #fff;
-        font-size: 28px;
-        line-height: 45px;
-    }
-
-    .btn.click span:before {
-        content: '\f00d';
-    }
-
-    .text {
-        color: antiquewhite;
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 65px;
-        text-align: center;
-        background: #1e1e1e;
-        letter-spacing: 1px;
-    }
-
-    nav ul {
-        background: #1b1b1b;
-        height: 100%;
-        width: 100%;
-        list-style: none;
-        padding-left: 0;
-    }
-
-    nav ul li {
-        line-height: 60px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    nav ul li:last-child {
-        border-radius: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    nav ul li a {
-        position: relative;
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 500;
-        display: block;
-        width: 100%;
-        border-left: 3px solid cyan;
-        padding-left: 20px;
-    }
-
-    nav ul li a span {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        font-size: 22px;
-        transition: transform 0.4s;
-    }
-
-
-
-}
-
-
-
-
-
-/* <<<<<<<<<<<------------------ estilos mobile/smartphone -------------->>>>>>>>>>>>>>> */
-
-
-
-
-
+/* <<<<<<<<<<<------------------ ESTILOS MOBILE/SMARTPHONE -------------->>>>>>>>>>>>>>> */
 @media (max-width: 755px) {
-
-
-    /* ------------- RESETEO ------------- */
-    * {
-        margin: 0;
-        padding: 0;
-        scroll-behavior: smooth;
-    }
-    
-    body {
-        background-image: url("https://irp-cdn.multiscreensite.com/44ae9721/MOBILE/images/d845fe2c-1143-4cda-8f42-cba6adf927e4.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 90%;
-        margin: auto;
-        
-    }
-    
-    /* ------------- ESTILOS DEL MENU ------------- */
-    
-    .nav-desktop{
-        display: none;
-    }
-    
-    /* ------------- MODIFICACIONES DEL CARRUSEL ------------- */
-    
-    .carrusel {
-        width: 100%;
-        height: 100%;
-        margin-top: 100px;
-    }
-    
-    /* ------------- BLOQUE CARRUSEL Y PRECIOS ------------- */
-    
-    /* #home {
-        display: flex;
-        flex-wrap: wrap;
-    } */
-    
-    .flex {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    .precios {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        color: rgb(0, 0, 0);
-        background-color: #ffc600;
-        width: auto;
-        margin-top: 10px;
-        border-radius: 5px;
-    }
-    
-    .precios p {
+  /* ------------- RESETEO ------------- */
+  * {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; }
+  body {
+    background-image: url("https://irp-cdn.multiscreensite.com/44ae9721/MOBILE/images/d845fe2c-1143-4cda-8f42-cba6adf927e4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 90%;
+    margin: auto; }
+  /* ------------- ESTILOS DEL MENU DESKTOP ------------- */
+  .nav-desktop {
+    display: none; }
+  /* ---------------- NAV MOBILE ----------------*/
+  .btn {
+    position: fixed;
+    z-index: 10;
+    top: 15px;
+    left: 45px;
+    height: 55px;
+    width: 50px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #1b1b1b;
+    transition: left 0.4s ease; }
+    .btn span {
+      color: #fff;
+      font-size: 28px;
+      line-height: 45px; }
+  .btn.click {
+    left: 260px; }
+  .btn.click span:before {
+    content: '\f00d'; }
+  .sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: #050505;
+    transition: left 0.4s ease;
+    z-index: 10;
+    top: 0; }
+    .sidebar .text {
+      color: antiquewhite;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 65px;
+      text-align: center;
+      background: #1e1e1e;
+      letter-spacing: 1px; }
+    .sidebar ul {
+      background: #1b1b1b;
+      height: 100%;
+      width: 100%;
+      list-style: none;
+      padding-left: 0; }
+      .sidebar ul li {
+        line-height: 60px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        .sidebar ul li a {
+          position: relative;
+          color: #fff;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 500;
+          display: block;
+          width: 100%;
+          border-left: 3px solid cyan;
+          padding-left: 20px; }
+          .sidebar ul li a span {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 22px;
+            transition: transform 0.4s; }
+      .sidebar ul li:last-child {
+        border-radius: 1px solid rgba(255, 255, 255, 0.05); }
+  .sidebar.show {
+    left: 0px; }
+  /* ------------- MODIFICACIONES DEL CARRUSEL ------------- */
+  .carrusel {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px; }
+  /* ------------- BLOQUE CARRUSEL Y PRECIOS ------------- */
+  .flex {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; }
+    .flex .precios {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: black;
+      background-color: #ffc600;
+      width: auto;
+      margin-top: 10px;
+      border-radius: 5px; }
+      .flex .precios p {
         margin: auto auto;
         font-size: 50px;
-        font-weight: 300;
-    }
-    
-    .precios span {
-        margin-bottom: 10px;
-        display: block;
-        font-size: x-large;
-        font-weight: bold;
-    }
-    
-    /* ------------- SECCION DE COMIDAS ------------- */
-    
-    h2{
-        margin-top: 100px;
-        padding: 5px;
-        border-radius: 3px;
-        background-color: #ffc600;
-        text-align: center;
-        font-family: 'Fjalla One', sans-serif;
-    }
-
-    .title-postre {
-        background-color: rgb(245, 148, 216);
-    }
-    
-    /* ------------- ESTILOS CARD PRINCIPAL ------------- */
-    
-    .principal-card {
-        display: flex;
-        flex-direction: column;
-        margin: 80px auto 0 auto;
-        background-color: aliceblue;
-        width: 90%;
-        height: max-content;
-        display: flex;
-        border-radius: 3px;
-    }
-    
-    .info-card-principal {
-        max-width: 90%;
-        margin: auto;
-    }
-    
-    .principal-card > img {
-        width: auto;
-        height: auto;
-    }
-    
-    .info-card-principal > h3 {
+        font-weight: 300; }
+        .flex .precios p span {
+          margin-bottom: 10px;
+          display: block;
+          font-size: x-large;
+          font-weight: bold; }
+  /* ------------- SUBTITULOS DE TODAS LAS SECCIONES ------------- */
+  h2 {
+    margin-top: 100px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #ffc600;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif; }
+  .title-postre {
+    background-color: #f594d8; }
+  /* ------------- ESTILOS CARD PRINCIPAL ------------- */
+  .principal-card {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto 0 auto;
+    background-color: aliceblue;
+    width: 90%;
+    height: max-content;
+    border-radius: 3px; }
+    .principal-card .principal-card > img {
+      width: auto;
+      height: auto; }
+    .principal-card .info-card-principal {
+      max-width: 90%;
+      margin: auto; }
+      .principal-card .info-card-principal h3 {
         margin-top: 40px;
         text-align: center;
-        text-transform: uppercase;
-    }
-    
-    .info-card-principal > h4 {
+        text-transform: uppercase; }
+      .principal-card .info-card-principal h4 {
         margin-top: 30px;
         text-align: center;
-        text-transform: uppercase;
-    }
-    
-    .info-card-principal > p {
+        text-transform: uppercase; }
+      .principal-card .info-card-principal p {
         margin: auto auto 20px;
         text-align: center;
-        width: 90%;
-    }
-    
-    /* ------------- ESTILOS DE CARTAS ------------- */
-    
-    .comidas, .bebidas, .postres {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap; 
-        margin-top: 20px;
-    }
-    
-    .carta {
-        margin-top: 50px;
-        cursor: pointer;
+        width: 90%; }
+  /* ------------- ESTILOS DE CARTAS ------------- */
+  .comidas, .bebidas, .postres {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px; }
+    .comidas .carta, .bebidas .carta, .postres .carta {
+      margin-top: 50px;
+      cursor: pointer;
+      width: 300px;
+      height: 400px;
+      background-color: #ffc600;
+      border-radius: 4px; }
+      .comidas .carta img, .bebidas .carta img, .postres .carta img {
         width: 300px;
-        height: 400px;
-        background-color: #ffc600;
-        border-radius: 4px;
-    }
-    
-    .carta > img {
-        width: 300px;
-        height: 300px;
-    }
-    
-    .carta > h3 {
+        height: 300px; }
+      .comidas .carta h3, .bebidas .carta h3, .postres .carta h3 {
         text-align: center;
         margin: 30px 0;
         text-transform: uppercase;
-        font-family: 'Fjalla One', sans-serif;
-    }
-    
-    .bebidas > .carta {
-        background-color: orange;
-    }
-    
-    .postres > .carta {
-        background-color: rgb(245, 148, 216);
-    }
-    
-    
-    /* ------------- ESTILOS DE SECCION RESERVA ------------- */
-    
-    
-    .reserva {
-        background-color: aliceblue;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .reserva > .horarios {
-        margin: auto;
-    }
-    
-    .reserva > .horarios > h3 {
+        font-family: 'Fjalla One', sans-serif; }
+  .bebidas > .carta {
+    background-color: orange; }
+  .postres > .carta {
+    background-color: #f594d8; }
+  /* ------------- ESTILOS DE SECCION RESERVA ------------- */
+  .reserva {
+    background-color: aliceblue;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap; }
+    .reserva .horarios {
+      margin: auto; }
+      .reserva .horarios h3 {
         text-align: center;
-        margin-bottom: 50px;
-    }
-    
-    form {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        height: 400px;
-    }
-
-    form > .form-check {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-
-    }
-
-    form > div > label {
+        margin-bottom: 50px; }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 400px; }
+    form .form-check {
+      display: flex;
+      flex-direction: column;
+      margin: auto; }
+      form .form-check label {
         width: max-content;
-        margin: auto;
-    }
-
-    form > div > input {
+        margin: auto; }
+      form .form-check input {
         width: 300px;
-        margin: auto;
-    }
-
-    form > div > button {
-        margin: auto 0 20px 38%;
-        background-color: rgb(89, 189, 69);
-        color: black;
-        width: 100px;
-        height: 50px;
-        border: 1px solid rgb(0, 0, 0);
-        border-radius: 20px;
-    }
-    
-    
-    /* ------------- ESTILOS DEL FOOTER ------------- */
-    
-    
-    footer {
-        height: max-content;
-        background-color: black;
-        color: aliceblue;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
-    
-    .texto-footer {
-        font-size: x-small;
-        margin: 50px auto;
-    }
-    
-    footer > div {
-        margin: auto 0;
-    }
-    
-    /*  ESTILO DE REDES FOOTER  */
-    
-    .redes {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: auto;
-    }
-    
-    .lista-redes {
-        text-align: left;
-        width: max-content;
-    }
-    
-    .lista-redes > li > a {
-        font-size: large;
-        list-style-type: none;
-        text-decoration: none;
-        color: rgb(241, 241, 227);
-    }
-    
-    i {
-        font-size: x-large;
-        margin-right: 10px;
-        background-color: rgb(36, 36, 36);
-        padding: 10px;
-        border-radius: 50%;
-    }
-    
-    .lista-redes > li > a:hover {
-        color: rgb(76, 175, 214);
-    }
-    
+        margin: auto; }
+    form div > button {
+      margin: auto 0 20px 38%;
+      background-color: #59bd45;
+      color: black;
+      width: 100px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 20px; }
+  /* ------------- ESTILOS DEL FOOTER ------------- */
+  footer {
+    height: max-content;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
     /*  ESTILO DE EMPRESA Y COMPAÑIA / FOOTER  */
-    
-    footer > div > ul {
-        color: rgb(241, 241, 227);
-        padding: 10px;
+    /*  ESTILO DE REDES FOOTER  */ }
+    footer .texto-footer {
+      font-size: x-small;
+      margin: 50px auto; }
+    footer div {
+      margin: auto 0; }
+      footer div h5 {
+        text-align: center;
+        margin-top: 20px; }
+    footer div > ul {
+      color: #f1f1e3;
+      padding: 10px;
+      margin-top: 20px;
+      font-size: small;
+      text-align: center; }
+      footer div > ul li {
         margin-top: 20px;
-        font-size: small;
-        text-align: center;
-    }
-    
-    footer > div > ul > li {
-        margin-top: 20px;
-        list-style-type: none;
-        text-decoration: none;
-    }
-    
-    .empresa > ul > li > a {
-        list-style-type: none;
-        text-decoration: none;
-        color: rgb(241, 241, 227);
-    }
-    
-    footer > div > h5 {
-        text-align: center;
-        margin-top: 20px;
-    }
-    
-    footer > .empresa > ul > li > a:hover {
-        color: rgb(76, 175, 214);
-    }
-    
-    .hr-footer {
-        margin: auto;
-        width: 50%;
-    }
-    
-    
-    /* ---------------- nav mobile ----------------*/
-    
-    .sidebar {
-        position: fixed;
-        width: 250px;
-        height: 100%;
-        left: -250px;
-        background: #050505;
-        transition: left 0.4s ease;
-        z-index: 10;
-        top: 0;
-    }
-    
-    .sidebar.show {
-        left: 0px;
-    }
-    
-    .btn {
-        position: fixed;
-        z-index: 10;
-        top: 15px;
-        left: 45px;
-        height: 55px;
-        width: 50px;
-        text-align: center;
-        border-radius: 3px;
-        cursor: pointer;
-        background: #1b1b1b;
-        transition: left 0.4s ease;
-    }
-    
-    .btn.click {
-        left: 260px;
-    }
-    
-    .btn span {
-        color: #fff;
-        font-size: 28px;
-        line-height: 45px;
-    }
-    
-    .btn.click span:before {
-        content: '\f00d';
-    }
-    
-    .text {
-        color: antiquewhite;
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 65px;
-        text-align: center;
-        background: #1e1e1e;
-        letter-spacing: 1px;
-    }
-    
-    nav ul {
-        background: #1b1b1b;
-        height: 100%;
-        width: 100%;
-        list-style: none;
-        padding-left: 0;
-    }
-    
-    nav ul li {
-        line-height: 60px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    nav ul li:last-child {
-        border-radius: 1px solid rgba(255, 255, 255, 0.05);
-    }
-    
-    nav ul li a {
-        position: relative;
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 500;
-        display: block;
-        width: 100%;
-        border-left: 3px solid cyan;
-        padding-left: 20px;
-    }
-    
-    nav ul li a span {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        font-size: 22px;
-        transition: transform 0.4s;
-    }
-    
-    
-    
-}
+        list-style-type: none; }
+        footer div > ul li a {
+          text-decoration: none;
+          color: #f1f1e3; }
+    footer .hr-footer {
+      margin: auto;
+      width: 50%; }
+    footer .redes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: auto; }
+      footer .redes .lista-redes {
+        text-align: left;
+        width: max-content; }
+        footer .redes .lista-redes li > a {
+          font-size: large;
+          list-style-type: none;
+          text-decoration: none;
+          color: #f1f1e3; }
+          footer .redes .lista-redes li > a i {
+            font-size: x-large;
+            margin-right: 10px;
+            background-color: #242424;
+            padding: 10px;
+            border-radius: 50%; } }
