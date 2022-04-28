@@ -17,11 +17,6 @@
         
     }
 
-    .enviado {
-        display: none;
-        z-index: 100;
-    }
-
     /* ------------- ESTILOS DEL MENU ------------- */
 
     nav {
@@ -402,11 +397,6 @@
         max-width: 90%;
         margin: auto;
         
-    }
-
-    .enviado {
-        display: none;
-        z-index: 100;
     }
 
     /* ------------- ESTILOS DEL MENU ------------- */
@@ -831,11 +821,6 @@
         max-width: 90%;
         margin: auto;
         
-    }
-
-    .enviado {
-        display: none;
-        z-index: 100;
     }
     
     /* ------------- ESTILOS DEL MENU ------------- */
